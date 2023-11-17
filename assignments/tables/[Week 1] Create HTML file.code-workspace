@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"path": "../[Week 1] Create HTML file"
+		},
+		{
+			"path": "../[Week 1] Serving local images"
+		},
+		{
+			"path": "../[Week 1] Sign Up and Log In Forms"
+		},
+		{
+			"path": "../[Week 1] Tables with rowspan and colspan"
+		},
+		{
+			"path": "../[Week 1] Three images"
+		},
+		{
+			"path": "../[Week 2] Favorite Celebrity"
+		},
+		{
+			"path": "../[Week 2] HTML in Action"
+		},
+		{
+			"path": "../[Week 2] My local business"
+		},
+		{
+			"path": "../detyr shtepie"
+		},
+		{
+			"path": "../HTML Final Project"
+		},
+		{
+			"path": "../klasa 6-te"
+		},
+		{
+			"path": "../sara"
+		},
+		{
+			"path": "../semantic"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Visual Studio Code"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "tables"
+	}
+}
