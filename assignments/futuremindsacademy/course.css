@@ -1,0 +1,82 @@
+body {
+    background-image: url(./img/a9a848f7b55f94e7f6b368aa5ba9d49d.jpg);
+    width: 900px;
+    text-align: center;
+    margin: 20px auto;
+    cursor:
+        url(./img/2672705_mouse_object_essential_app_ux_icon\ \(1\).png) 2 2,
+        pointer;
+}
+
+
+.textAlignCenter {
+    text-align: center;
+}
+
+
+.h1 {
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.h1:hover {
+    background-color: lightcoral;
+}
+
+.h2 {
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: lightgreen;
+}
+
+.h2:hover {
+    background-color: blue;
+}
+
+.h3 {
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: violet;
+}
+
+.h3:hover {
+    background-color: lightcoral;
+}
+
+.h4 {
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: orange;
+}
+
+.h4:hover {
+    background-color: yellow;
+}
+
+.h5 {
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: pink;
+}
+
+.h5:hover {
+    background-color: lightsalmon;
+}
+
+
+.h6 {
+    border: 10px solid red;
+    border-radius: 35px;
+    background-color: lightseagreen;
+}
+
+.h6:hover {
+    background-color: blue;
+}
+
+.h3 {
+    border: 10px solid black;
+    border-radius: 15px;
+    background-color: white;
+}

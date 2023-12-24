@@ -1,0 +1,13 @@
+.dFlex {
+    display: flex;
+    align-items: center;
+}
+
+
+.bgaqua {
+    background-color: aquamarine;
+}
+
+.nav {
+    background-color: red;
+}

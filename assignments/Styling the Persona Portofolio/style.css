@@ -1,0 +1,89 @@
+body {
+    background-image: url(./img/a9a848f7b55f94e7f6b368aa5ba9d49d.jpg);
+    width: 900px;
+    margin: 20px auto;
+    cursor:
+        url(./img/2672705_mouse_object_essential_app_ux_icon\ \(1\).png) 2 2,
+        pointer;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.hr {
+    height: 5px;
+    background-color: black;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.bgblue {
+    background-color: blue;
+}
+
+.bgblack {
+    background-color: black;
+}
+
+.bgblue:hover {
+    background-color: rgb(78, 78, 160);
+}
+
+.bgred {
+    background-color: red;
+}
+
+.bgred:hover {
+    background-color: rgb(90, 0, 0);
+}
+
+.bggreen {
+    background-color: green;
+}
+
+.bggreen:hover {
+    background-color: rgb(2, 41, 2);
+}
+
+.displayInLine {
+    display: inline;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.textWhite {
+    color: white;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.borderRadius30 {
+    border-radius: 30px;
+}
+
+.marginX25 {
+    margin: 0 25px;
+}
+
+.marginY40 {
+    margin: 40px 0;
+}
+
+.borders5 {
+    border: 5px solid transparent;
+}
+
+.border5:hover {
+    border: 5px solid black;
+}
+
+.underLine {
+    text-decoration: underline;
+}
