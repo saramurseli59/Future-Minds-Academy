@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: pink;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 140px 800px 100px 100px;
+    grid-template-rows: 80px 100px 300px 500px;
+
+}
+
+.section {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    background-color: lightcoral;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.section1 {
+    border-radius: 15px 15px 0px 0px;
+    grid-row: 2/5;
+    grid-column: 2/4;
+    background-color: blanchedalmond;
+    gap: 4;
+    text-align: center;
+}

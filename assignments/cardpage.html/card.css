@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.bgRed {
+    background-color: red;
+}
+
+.bgBlue {
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+}
+
+.margin10px {
+    margin: 10px;
+}

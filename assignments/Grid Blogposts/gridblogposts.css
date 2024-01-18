@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.spanStyle {
+    justify-content: end;
+    color: white;
+}
+
+
+
+.container {
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.article {
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    background-color: rgb(7, 7, 116);
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    padding: 20px;
+}
+
+.colorGray {
+    color: gray;
+}
+
+main {
+    padding: 20px 100px;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.span1 {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.span2 {
+    background: blue;
+    color: white;
+    padding: 5px;
+}
+
+.span3 {
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.spanStyle {
+    justify-content: end;
+}
+
+.sizes {
+    margin: 5px;
+}
+
+
+.textBlue {
+    color: blue;
+}
+
+.imgArticle {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
