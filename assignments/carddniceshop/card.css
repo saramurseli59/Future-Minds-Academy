@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+.screen {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    border: 10px solid white;
+    box-shadow: 0 0 20px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    background-image: linear-gradient(to bottom right, blue, red);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}

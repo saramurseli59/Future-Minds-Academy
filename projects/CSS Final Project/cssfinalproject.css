@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Display Grid */
+.dGrid {
+    display: grid;
+}
+
+/* Display flex */
+.dFlex {
+    display: flex;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Aside */
+aside {
+    color: white;
+    background-blend-mode: color;
+    background: url(./assets/images/sidebar-1.jpg);
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+}
+
+aside div:hover:not(.logo, .active) {
+    background-color: rgb(39, 37, 37);
+}
+
+.asideImages {
+    width: 35px;
+    height: 35px;
+}
+
+.design {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design1 {
+    grid-row: 2/4;
+    grid-column: 2/6;
+}
+
+.design2 {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.active {
+    background-color: red;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+}
+
+.img {
+    border-radius: 50%;
+    border: 5px black;
+    width: 40px;
+    height: 40px;
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+}
+
+/* Header */
+.notification {
+    color: black;
+    background-color: white;
+}
+
+.notification div:hover:not(.logo, .active) {
+    background-color: red;
+    color: white;
+}
+
+.headerborder {
+    border: none;
+    border-color: red;
+}
+
+.headerborder:hover {
+    background-color: blue;
+}
+
+.bgRed {
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+/* Main */
+.main {
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.bgGreen {
+    background-color: green;
+}
+
+.bgWhite {
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.bgGray {
+    background-color: lightgray;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.gap300 {
+    gap: 300px;
+}

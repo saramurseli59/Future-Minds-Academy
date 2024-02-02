@@ -9,16 +9,17 @@ body {
 
 }
 
-image {
-    width: 200px;
+img {
     height: 200px;
-    transition-property: transform, filter;
+    width: 200px;
+    filter: blur(2px);
     transition-duration: 0.4s, 0.1s;
+    transition-property: transform, filter;
     transition-timing-function: ease-out;
-    filter: blur(3px);
+
 }
 
-image:hover {
+img:hover {
     filter: blur(0px);
     transform: rotate(720deg);
     height: 200px;

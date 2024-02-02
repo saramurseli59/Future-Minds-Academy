@@ -1,0 +1,50 @@
+/* Main */
+.main {
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.mainicon {
+    background-color: rgb(28, 170, 28);
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    box-shadow: 10px gray;
+}
+
+.flagicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+}
+
+.maindiv {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.mainflags {
+    margin-right: 20px;
+}
+
+.bgGray {
+    background-color: lightgray;
+}
+
+/* Main divs */
+.div1 {
+    align-items: ceter;
+    display: flex;
+    margin: 20px;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px
+}
