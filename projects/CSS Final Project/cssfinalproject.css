@@ -3,24 +3,24 @@
     margin: 0;
 }
 
-/* Display Grid */
+/*** Display Grid ***/
 .dGrid {
     display: grid;
 }
 
-/* Display flex */
+/*** Display Flex ***/
 .dFlex {
     display: flex;
 }
 
+/*** Body ***/
 body {
     display: grid;
     grid-template-columns: auto 1fr;
-    width: 100%;
-    height: 100vh;
+    background-color: lightgray;
 }
 
-/* Aside */
+/*** Aside ***/
 aside {
     color: white;
     background-blend-mode: color;
@@ -41,24 +41,17 @@ aside div:hover:not(.logo, .active) {
 .design {
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
-}
-
-.design1 {
-    grid-row: 2/4;
-    grid-column: 2/6;
 }
 
 .design2 {
     grid-template-columns: 1fr auto;
-    align-items: center;
 }
 
 .active {
     background-color: red;
     border-radius: 5px;
-    width: 250px;
-    height: 50px;
+    width: 330px;
+    height: 70px;
 }
 
 .img {
@@ -73,24 +66,60 @@ aside div:hover:not(.logo, .active) {
     height: 30px;
 }
 
-/* Header */
+
+/*** Header ***/
+.divNotification {
+    width: 30px;
+    height: 30px;
+}
+
 .notification {
     color: black;
     background-color: white;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    visibility: hidden;
 }
 
-.notification div:hover:not(.logo, .active) {
+.design:hover .notification {
+    visibility: visible;
+}
+
+
+.button {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    right: 20px;
+    border: 1px solid red;
+}
+
+.hover {
+    padding: 10px;
+}
+
+.hover:hover {
     background-color: red;
     color: white;
 }
 
-.headerborder {
-    border: none;
-    border-color: red;
+.figure2 {
+    position: absolute;
 }
 
-.headerborder:hover {
-    background-color: blue;
+.headerimg {
+    width: 30px;
+    height: 30px;
+}
+
+.Dashboard {
+    width: 30px;
+    height: 30px;
 }
 
 .bgRed {
@@ -100,29 +129,172 @@ aside div:hover:not(.logo, .active) {
     width: 30px;
 }
 
-/* Main */
+/*** Main ***/
 .main {
     margin: 40px;
     padding: 30px;
     border-radius: 20px;
     background-color: white;
+    height: 550px;
 }
 
-.bgGreen {
+.mainicon {
+    border-radius: 10px;
+    background-color: rgb(28, 170, 28);
+    position: relative;
+    padding: 10px;
+    box-shadow: 10px gray;
+}
+
+.transform1 {
+    transform: translateY(-40px);
+}
+
+.transform {
+    transform: translateY(-50px);
+    transition: transform 2s;
+}
+
+.div3:hover .transform {
+    transform: translateY(-100px);
+    visibility: visible;
+}
+
+.size {
+    width: 450px;
+    height: 100px;
+}
+
+.size1 {
+    width: 350px;
+    height: 450px;
+}
+
+.size2 {
+    width: 1200px;
+    height: 400px;
+}
+
+.size3 {
+    width: 50px;
+    height: 50px;
+}
+
+.margin {
+    margin-top: 15px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+.justifyContent {
+    justify-content: center;
+    top: -30px;
+}
+
+.flagicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+}
+
+.maindiv {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.mainflags {
+    margin-right: 20px;
+}
+
+.imgmain {
+    width: 350px;
+    height: 200px;
+    border-radius: 2px;
+}
+
+.imgmain1 {
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+.div3:hover .imgmain1 {
+    visibility: visible;
+    transition: transform 2s;
+}
+
+.maintopdiv {
+    top: 60px;
+}
+
+.div1 {
+    align-items: ceter;
+    display: flex;
+    margin: 20px;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px
+}
+
+.div3 {
+    justify-content: space-between;
+}
+
+.div4 {
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.bgGreenlanguage {
     background-color: green;
 }
 
-.bgWhite {
-    background-color: white;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
+.bgOrange {
+    background-color: orange;
+}
+
+.bgPink {
+    background-color: rgb(173, 56, 76);
+}
+
+.bgGreen {
+    background-color: rgb(22, 128, 22);
+}
+
+.bgBlue {
+    background-color: lightskyblue;
 }
 
 .bgGray {
     background-color: lightgray;
 }
 
+.bgWhite {
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.bgGray {
+    background-color: lightgray;
+}
+
+/***Footer***/
+nav {
+    text-decoration: none;
+    list-style: none;
+}
+
+/***Gaps***/
 .gap50 {
     gap: 50px;
 }
@@ -131,6 +303,25 @@ aside div:hover:not(.logo, .active) {
     gap: 10px;
 }
 
+.gap20 {
+    gap: 20px;
+}
+
 .gap300 {
     gap: 300px;
+}
+
+@media (max-width=1000px) {
+
+    aside,
+    .headerimg .Dashboard {
+        display: none;
+    }
+
+    .size2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
