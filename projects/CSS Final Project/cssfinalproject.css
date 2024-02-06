@@ -135,7 +135,7 @@ aside div:hover:not(.logo, .active) {
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    height: 550px;
+    height: 450px;
 }
 
 .mainicon {
@@ -168,11 +168,6 @@ aside div:hover:not(.logo, .active) {
 .size1 {
     width: 350px;
     height: 450px;
-}
-
-.size2 {
-    width: 1200px;
-    height: 400px;
 }
 
 .size3 {
