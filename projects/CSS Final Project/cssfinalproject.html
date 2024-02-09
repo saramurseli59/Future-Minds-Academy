@@ -11,16 +11,16 @@
 </head>
 
 <body>
-
     <!---------- Aside ------------->
-    <aside class="gap10 background">
+    <aside class="gap10 background gap20">
+
         <div class="dGrid gap50 design">
             <h1>CP</h1>
             <h1>Cool Page</h1>
         </div>
         <hr>
 
-        <div class=" dGrid gap50 design">
+        <div class="dGrid gap50 design">
             <figure>
                 <img class="img " src="./assets/images/avatar.jpg" alt="avatar">
             </figure>
@@ -118,14 +118,16 @@
                 <img class="img" src="./assets/icons/asides/expandMore.svg" alt="icon">
             </figure>
         </div>
+        </div>
+
     </aside>
 
     <!----------- Header ------------->
-    <div class="dGrid bgGray">
+    <div class="dGrid bgGray container pading">
         <header>
             <div class="dGrid design2">
-                <div class="dGrid design" title="See more">
-                    <figure>
+                <div class="dGrid design">
+                    <figure title="See more">
                         <img class="Dashboard bgWhite" src="./assets/icons/header/more.svg" alt="icon">
                     </figure>
                     <h1 class="dGrid design">Dashboard</h1>
@@ -133,9 +135,9 @@
 
                 <div class="dGrid design gap10">
 
-                    <div class="dGrid designn" title="Search">
+                    <div class="dGrid design" title="Search">
                         <form class="dFlex">
-                            <input type="text" id="example" placeholder="Search">
+                            <input class="inputheader" type="text" id="example" placeholder="Search">
                             <label for="example">
                         </form>
 
@@ -150,12 +152,13 @@
                         </figure>
 
                         <div class="divNotification">
-                            <figure class="figure2" title="Notification">
+                            <figure title="Notification">
                                 <img class="headerimg" src="./assets/icons/header/notifications.svg" alt="icon">
-                                <button class="button">5</button>
                             </figure>
 
-                            <div class="notification">
+                            <button class="button">5</button>
+
+                            <div class="notification positionabsolute1">
                                 <p class="hover">John Doe send a meassage</p>
                                 <p class="hover">Someone viewed your profile</p>
                                 <p class="hover">John Doe send a meassage</p>
@@ -176,7 +179,7 @@
         <!------------- Main ------------->
         <main class="bgGray">
             <div class="size2">
-                <div class="main">
+                <div class="main1">
                     <div class="dFlex design">
                         <figure>
                             <img class="mainicon transform1 size3" src="./assets/icons/cards/language.svg" alt="icon">
@@ -184,7 +187,8 @@
                         <h1 class="maindiv">Global Sales by Top Locations</h1>
                     </div>
 
-                    <div class="dFlex">
+
+                    <div class="dGrid auto1fr">
                         <div class="mainflags dGrid design">
                             <div class="dFlex div1 gap30">
                                 <figure>
@@ -257,14 +261,16 @@
                             </div>
                         </div>
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d752287.8220347093!2d20.902075449999998!3d42.56326975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707061859950!5m2!1sen!2s"
-                            style="border:0;" allowfullscreen="" class="size2" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" width="800px"></iframe>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d752287.8220347093!2d20.902075449999998!3d42.56326975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707061859950!5m2!1sen!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" width="800px" height="300px"></iframe>
+                        </div>
                     </div>
                 </div>
 
-                <div class="dFlex">
+                <div class="dGrid auto2frs">
                     <div class="main size">
                         <div class="div3 dFlex">
                             <figure><img class="bgOrange mainicon transform1 size3" src="./assets/icons/cards/couch.svg"
@@ -303,9 +309,7 @@
                             <p>Tracket from Google Analyts</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="dFlex">
                     <div class="main size">
                         <div class="div3 dFlex">
                             <figure>
@@ -349,25 +353,25 @@
 
                 </div>
                 <h1 class="dFlex design">Manage Listings</h1>
-                <div class="dFlex">
+                <div class="dGrid auto3frs">
 
                     <div class="main  size1 design">
                         <div class="div3">
-                            <div>
+                            <div class="cardimage1">
                                 <figure>
                                     <img class="imgmain transform" src="./assets/images/card-1.jpeg" alt="icon">
                                 </figure>
 
                                 <div class="dFlex justifyContent imgmain1">
-                                    <figure>
+                                    <figure title="view">
                                         <img src="./assets/icons/cards/calendar.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="edit">
                                         <img src="./assets/icons/cards/edit.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="delete">
                                         <img src="./assets/icons/cards/delete.svg" alt="icon">
                                     </figure>
                                 </div>
@@ -395,20 +399,20 @@
 
                     <div class="main  size1 design">
                         <div class="div3">
-                            <div>
+                            <div class="cardimage1">
                                 <figure>
                                     <img class="imgmain transform" src="./assets/images/card-2.jpeg" alt="icon">
                                 </figure>
                                 <div class="dFlex justifyContent imgmain1">
-                                    <figure>
+                                    <figure title="view">
                                         <img src="./assets/icons/cards/calendar.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="edit">
                                         <img src="./assets/icons/cards/edit.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="delete">
                                         <img src="./assets/icons/cards/delete.svg" alt="icon">
                                     </figure>
                                 </div>
@@ -436,21 +440,21 @@
 
                     <div class="main  size1 design">
                         <div class="div3">
-                            <div>
+                            <div class="cardimage1">
                                 <figure>
                                     <img class="imgmain transform" src="./assets/images/card-3.jpeg" alt="icon">
                                 </figure>
 
                                 <div class="dFlex justifyContent imgmain1">
-                                    <figure title="">
+                                    <figure title="view">
                                         <img src="./assets/icons/cards/calendar.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="edit">
                                         <img src="./assets/icons/cards/edit.svg" alt="icon">
                                     </figure>
 
-                                    <figure>
+                                    <figure title="delete">
                                         <img src="./assets/icons/cards/delete.svg" alt="icon">
                                     </figure>
                                 </div>
@@ -477,16 +481,22 @@
                     </div>
                 </div>
         </main>
+        <hr>
 
 
         <!-- Footer -->
         <footer>
-            <nav class="nav">
-                <a href="#">Home</a>
-                <a href="#">Company</a>
-                <a href="#">Portofolio</a>
-                <a href="#">Blog</a>
-            </nav>
+            <div class="dFlex justifyContent1">
+                <div class="footerdiv gap20 dFlex">
+                    <p>Home</p>
+                    <p>Company</p>
+                    <p>Portofolio</p>
+                    <p>Blog</p>
+                </div>
+
+                <p>&#169 Sara Murseli,2024</p>
+            </div>
+
         </footer>
     </div>
 </body>

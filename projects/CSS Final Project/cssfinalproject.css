@@ -18,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: lightgray;
+    height: 100vh;
 }
 
 /*** Aside ***/
@@ -26,16 +27,18 @@ aside {
     background-blend-mode: color;
     background: url(./assets/images/sidebar-1.jpg);
     background-color: rgba(0, 0, 0, 0.9);
-    height: 100vh;
+    gap: 30px;
+    overflow-y: scroll;
+    padding: 20px;
 }
 
 aside div:hover:not(.logo, .active) {
     background-color: rgb(39, 37, 37);
 }
 
-.asideImages {
-    width: 35px;
-    height: 35px;
+.paddingmargin {
+    padding: -30px;
+    overflow-y: scroll;
 }
 
 .design {
@@ -50,42 +53,45 @@ aside div:hover:not(.logo, .active) {
 .active {
     background-color: red;
     border-radius: 5px;
-    width: 330px;
-    height: 70px;
 }
 
 .img {
     border-radius: 50%;
     border: 5px black;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
+/* container */
+
+.container {
+    overflow-y: scroll;
+}
+
+
+/*** Header ***/
 .img1 {
     width: 30px;
     height: 30px;
 }
 
-
-/*** Header ***/
-.divNotification {
-    width: 30px;
-    height: 30px;
+.pading {
+    padding: 20px 50px;
 }
 
 .notification {
     color: black;
     background-color: white;
     position: absolute;
-    right: 80px;
-    top: 20px;
-    visibility: hidden;
+    right: 30px;
+    top: 15px;
+    display: none;
+    width: 230px;
 }
 
-.design:hover .notification {
-    visibility: visible;
+.divNotification:hover .notification {
+    display: block;
 }
-
 
 .button {
     width: 20px;
@@ -93,14 +99,25 @@ aside div:hover:not(.logo, .active) {
     background-color: red;
     color: white;
     border-radius: 50%;
-    position: relative;
-    top: -15px;
-    right: 20px;
-    border: 1px solid red;
+    position: absolute;
+    top: -0px;
+    right: -5px;
+    border: 3px solid red;
+}
+
+.inputheader {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+}
+
+.inputheader:focus {
+    border-bottom: 2px solid red;
 }
 
 .hover {
-    padding: 10px;
+    padding: 20px;
 }
 
 .hover:hover {
@@ -108,25 +125,22 @@ aside div:hover:not(.logo, .active) {
     color: white;
 }
 
+.divNotification {
+    position: relative;
+}
+
+.positionabsolute1 {
+    position: absolute;
+}
+
 .figure2 {
     position: absolute;
+    top: 0;
 }
 
 .headerimg {
     width: 30px;
     height: 30px;
-}
-
-.Dashboard {
-    width: 30px;
-    height: 30px;
-}
-
-.bgRed {
-    background-color: red;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
 }
 
 /*** Main ***/
@@ -135,7 +149,26 @@ aside div:hover:not(.logo, .active) {
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    height: 450px;
+}
+
+.auto1fr {
+    grid-template-columns: auto 1fr;
+}
+
+.auto2frs {
+    grid-template-columns: 1fr 1fr;
+}
+
+.auto3frs {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main1 {
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+
 }
 
 .mainicon {
@@ -150,24 +183,18 @@ aside div:hover:not(.logo, .active) {
     transform: translateY(-40px);
 }
 
-.transform {
-    transform: translateY(-50px);
-    transition: transform 2s;
-}
-
-.div3:hover .transform {
+.cardimage1:hover .transform {
     transform: translateY(-100px);
     visibility: visible;
 }
 
-.size {
-    width: 450px;
-    height: 100px;
+.cardimage1 {
+    height: 150px;
 }
 
-.size1 {
-    width: 350px;
-    height: 450px;
+.transform {
+    transform: translateY(-50px);
+    transition: transform 1s;
 }
 
 .size3 {
@@ -217,7 +244,7 @@ h1 {
     visibility: hidden;
 }
 
-.div3:hover .imgmain1 {
+.cardimage1:hover .imgmain1 {
     visibility: visible;
     transition: transform 2s;
 }
@@ -284,9 +311,14 @@ h1 {
 }
 
 /***Footer***/
-.nav {
+.footerdiv {
     text-decoration: none;
     list-style: none;
+    grid-template-columns: auto 1fr auto;
+}
+
+.justifyContent1 {
+    justify-content: space-between;
 }
 
 /***Gaps***/
@@ -298,6 +330,10 @@ h1 {
     gap: 10px;
 }
 
+.gap50 {
+    gap: 50px;
+}
+
 .gap20 {
     gap: 20px;
 }
@@ -306,10 +342,11 @@ h1 {
     gap: 300px;
 }
 
-@media (max-width=1000px) {
+@media (max-width=1200px) {
 
     aside,
-    .headerimg .Dashboard {
+    .headerimg,
+    .Dashboard {
         display: none;
     }
 
@@ -318,4 +355,7 @@ h1 {
         flex-direction: column;
     }
 
+    .backgroundimage {
+        background-image: url(./assets/icons/header/menu.svg);
+    }
 }
