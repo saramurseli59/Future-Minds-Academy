@@ -46,10 +46,6 @@ aside div:hover:not(.logo, .active) {
     align-items: center;
 }
 
-.design2 {
-    grid-template-columns: 1fr auto;
-}
-
 .active {
     background-color: red;
     border-radius: 5px;
@@ -79,6 +75,10 @@ aside div:hover:not(.logo, .active) {
     padding: 20px 50px;
 }
 
+.ipadHeder {
+    display: none;
+}
+
 .notification {
     color: black;
     background-color: white;
@@ -93,6 +93,10 @@ aside div:hover:not(.logo, .active) {
     display: block;
 }
 
+.design2 {
+    grid-template-columns: 1fr auto;
+}
+
 .button {
     width: 20px;
     height: 20px;
@@ -103,6 +107,11 @@ aside div:hover:not(.logo, .active) {
     top: -0px;
     right: -5px;
     border: 3px solid red;
+}
+
+.Dashboard1 {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
 }
 
 .inputheader {
@@ -157,10 +166,12 @@ aside div:hover:not(.logo, .active) {
 
 .auto2frs {
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 .auto3frs {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
 }
 
 .main1 {
@@ -168,7 +179,6 @@ aside div:hover:not(.logo, .active) {
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-
 }
 
 .mainicon {
@@ -176,7 +186,7 @@ aside div:hover:not(.logo, .active) {
     background-color: rgb(28, 170, 28);
     position: relative;
     padding: 10px;
-    box-shadow: 10px gray;
+    box-shadow: 20px gray;
 }
 
 .transform1 {
@@ -233,7 +243,6 @@ h1 {
 }
 
 .imgmain {
-    width: 350px;
     height: 200px;
     border-radius: 2px;
 }
@@ -342,12 +351,25 @@ h1 {
     gap: 300px;
 }
 
-@media (max-width=1200px) {
+@media (max-width:1200px) {
 
     aside,
-    .headerimg,
-    .Dashboard {
+    .design2 {
         display: none;
+    }
+
+    .auto1fr {
+        grid-template-columns: 1fr;
+    }
+
+    .auto3frs {
+        grid-template-columns: 1fr;
+    }
+
+    .imgmain {
+        height: 30vh;
+        border-radius: 2px;
+        width: 100%;
     }
 
     .size2 {
@@ -355,7 +377,49 @@ h1 {
         flex-direction: column;
     }
 
-    .backgroundimage {
-        background-image: url(./assets/icons/header/menu.svg);
+    .ipadHeder {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:600px) {
+    .auto2frs {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    aside,
+    .design2 {
+        display: none;
+    }
+
+    .auto1fr {
+        grid-template-columns: 1fr;
+    }
+
+    .auto3frs {
+        grid-template-columns: 1fr;
+    }
+
+    .imgmain {
+        height: 30vh;
+        border-radius: 2px;
+        width: 100%;
+    }
+
+    .size2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ipadHeder {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
